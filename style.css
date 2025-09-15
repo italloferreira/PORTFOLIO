@@ -1,0 +1,78 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    :root { 
+        --cor-fundo-primaria: #0D0D0D; 
+        --cor-fundo-secundaria: #1C1C1C; 
+        --cor-texto-primaria: #EAEAEA; 
+        --cor-texto-secundaria: #9CA3AF; 
+        --cor-botao-primaria: #6366F1; 
+        --cor-botao-secundaria: #4F46E5; 
+    }
+
+    /* header */
+
+    header {
+      background-color: var(--cor-fundo-primaria);
+      width: 100vw;
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    .criador {
+      color: var(--cor-texto-primaria);
+      width: 30vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 2vw;
+    }
+
+    header ul {
+      color: var(--cor-texto-secundaria);
+      width: 70vw;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    header ul li {
+      position: relative; 
+      cursor: pointer;
+      padding-bottom: 5px; 
+      color: var(--cor-texto-secundaria);
+      transition: color 0.3s ease;
+    }
+
+    header ul li:hover {
+      color: var(--cor-texto-primaria);
+    }
+
+    .linha {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0%;
+      background-color: var(--cor-texto-primaria);
+      transition: width 0.5s ease;
+      border-radius: 2px;
+    }
+
+    header ul li:hover .linha {
+      width: 100%;
+    }
+
+
+    /* main */
+
