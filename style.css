@@ -18,12 +18,16 @@
 
     header {
       background-color: var(--cor-fundo-primaria);
-      width: 100vw;
+      width: 100%;
       height: 15vh;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 0 2rem;
+
+      position: fixed;
+      opacity: 95%;
+     
     }
 
     .criador {
@@ -75,4 +79,66 @@
 
 
     /* main */
+
+    main{
+
+      width: 100%;
+      height: 150vh;
+      background-color: var(--cor-fundo-primaria);
+
+    }
+
+    .conteiner-sobre{
+      width: 100%;
+      height: 100vh;
+
+      display: flex;
+    }
+
+    .conteiner-informacoes{
+      width: 50%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      color: var(--cor-texto-primaria);
+      padding: 5%;
+    }
+
+
+    .conteiner-informacoes h3{
+      margin-bottom: 30px;
+    }
+
+    .conteiner-informacoes p{
+      color: var(--cor-texto-secundaria);
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    .conteiner-informacoes button{
+      background-color: var(--cor-botao-primaria);
+      padding: 1%;
+      border: 0;
+      border-radius: 20px;
+      width: 100px;
+      color: var(--cor-texto-primaria);
+    }
+
+    .conteiner-img{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .conteiner-img img{
+      width: 60%;
+      height: 60%;
+      border-radius: 50px;
+      
+    }
 
