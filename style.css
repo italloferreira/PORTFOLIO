@@ -148,6 +148,11 @@
       background-color: var(--cor-fundo-primaria);
     }
 
+    .titulo{
+      color: var(--cor-texto-primaria);
+      padding: 20px;
+    }
+
     .conteiner-habilidades ul{
   
       display: flex;
@@ -241,6 +246,10 @@
       align-items: center;
       flex-direction: column;
     }
+
+    .conteiner-projeto-informacao h1{
+      color: var(--cor-texto-primaria);
+    }
     .conteiner-projeto-icones{
       display: flex;
       justify-content: center;
@@ -255,6 +264,30 @@
       height: 50%;
       overflow-wrap: break-word;
       white-space: normal;
+      color: var(--cor-texto-secundaria);
+    }
+
+    .conteiner-projeto-botoes{
+      width: 70%;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-around;
+    } 
+
+    .botoes{
+      width: 10vw;
+      height: 7vh;
+      background-color: var(--cor-botao-primaria);
+      border: 0;
+      border-radius: 15px;
+      color: var(--cor-texto-primaria);
+    }
+
+    .botoes:hover{
+      background-color: var(--cor-botao-secundaria);
+      transition: 0.5s;
     }
 
     
