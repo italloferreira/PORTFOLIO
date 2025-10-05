@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "HTML",
+    "icone": "img/icones/linguegens/html.png",
+    "categoria": "frontend"
+  },
+  {
+    "nome": "CSS",
+    "icone": "img/icones/linguegens/css.png",
+    "categoria": "frontend"
+  },
+  {
+    "nome": "JavaScript",
+    "icone": "img/icones/linguegens/js.png",
+    "categoria": "frontend"
+  },
+  {
+    "nome": "React",
+    "icone": "img/icones/linguegens/react.png",
+    "categoria": "frontend"
+  },
+  {
+    "nome": "Python",
+    "icone": "img/icones/linguegens/python.png",
+    "categoria": "backend"
+  },
+  {
+    "nome": "Git",
+    "icone": "img/icones/linguegens/git.png",
+    "categoria": "ferramentas"
+  },
+  {
+    "nome": "Github",
+    "icone": "img/icones/linguegens/github.png",
+    "categoria": "ferramentas"
+  },
+  {
+    "nome": "Figma",
+    "icone": "img/icones/linguegens/figma.png",
+    "categoria": "ferramentas"
+  },
+  {
+    "nome": "Node.js",
+    "icone": "img/icones/linguegens/node.png",
+    "categoria": "backend"
+  },
+  {
+    "nome": "C",
+    "icone": "img/icones/linguegens/c.png",
+    "categoria": "backend"
+  }
+]
