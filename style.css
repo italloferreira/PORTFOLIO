@@ -6,7 +6,6 @@
  }
 
  :root {
-   --cor-fundo-primaria: #0D0D0D;
    --cor-fundo-secundaria: #1C1C1C;
    --cor-texto-primaria: #EAEAEA;
    --cor-texto-secundaria: #9CA3AF;
@@ -17,17 +16,28 @@
  /* header */
 
  header {
-   background-color: var(--cor-fundo-primaria);
    width: 100%;
-   height: 15vh;
+   height: 10vh;
+
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 0 2rem;
 
    position: fixed;
-   opacity: 95%;
+   top: 0;
+   left: 0;
 
+   background: rgba(255, 255, 255, 0.05);
+   /* transparência */
+   backdrop-filter: blur(10px);
+   /* efeito vidro */
+   -webkit-backdrop-filter: blur(10px);
+   /* suporte Safari */
+
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+   z-index: 10;
  }
 
  .criador {
@@ -88,8 +98,18 @@
 
    width: 100%;
    height: 150vh;
-   background-color: var(--cor-fundo-primaria);
+   background-color: transparent;
 
+ }
+
+ #bg-video {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -2;
  }
 
  .conteiner-sobre {
@@ -152,8 +172,7 @@
 
  .butao-curriculo {
    border: 2px var(--cor-texto-primaria) solid;
-   background-color: var(--cor-fundo-primaria);
-   padding: 1%;
+   background-color: transparent;
    border-radius: 20px;
    width: 150px;
    height: 50px;
@@ -188,7 +207,7 @@
  .conteiner-img img {
    width: 60%;
    height: 60%;
-   border-radius: 50px;
+   border-radius: 100%;
 
  }
 
@@ -238,7 +257,6 @@
  .conteiner-elementos {
    display: grid;
    grid-template-columns: repeat(6, 1fr);
-   background-color: var(--cor-fundo-primaria);
    padding-top: 10px;
    gap: 10px;
  }
@@ -285,7 +303,6 @@
    scroll-margin-top: 20px;
    width: 100%;
    height: 100vh;
-   background-color: var(--cor-fundo-primaria);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -371,7 +388,7 @@
  }
 
  .butao {
-  border: none;
+   border: none;
    background-color: transparent;
    width: 100px;
    height: 50px;
@@ -382,11 +399,7 @@
  .butao img {
    width: 30%;
    height: 60%;
- }
-
- .butao:hover {
-   background-color: var(--cor-botao-secundaria);
-   transition: 0.5s;
+   cursor: pointer;
  }
 
  /*footer*/
@@ -395,12 +408,20 @@
  .conteiner-contato {
    scroll-margin-top: 100px;
    width: 100%;
-   height: 50vh;
-   background-color: var(--cor-fundo-primaria);
+   height: 30vh;
+
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+
+   background: rgba(0, 0, 0, 0.3);
+   /* transparência */
+   backdrop-filter: blur(12px);
+   -webkit-backdrop-filter: blur(12px);
+
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
  }
 
  .conteiner-icones {
