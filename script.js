@@ -95,7 +95,11 @@ async function carregarRepositorio() {
 
       cartao.innerHTML = `
         <div class="conteiner-projeto-img">
-          <img src="${imagem}" alt="Imagem do projeto">
+          <img 
+            src="${imagem}" 
+            alt="Imagem do projeto"
+            onerror="this.onerror=null; this.src='./img/imgNaoDisponivel.png';"
+          >
         </div>
 
         <div class="conteiner-projeto-informacao">
